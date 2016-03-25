@@ -1,0 +1,24 @@
+// Settings
+
+dir = {
+  bower: "../../../bower_components/",
+  npm: "node_modules/"
+}
+
+// Core
+@import "_variables";
+
+// Mixins
+@import "mixins/**";
+
+// Library
+@import "modules/_normalize";
+
+// Package managers
+@import dir.bower + "xy-flexbox/xy";
+
+// Modules
+@import "modules/!(_normalize)**";
+@import "components/**";
+@import "partials/**";
+@import "pages/**";
