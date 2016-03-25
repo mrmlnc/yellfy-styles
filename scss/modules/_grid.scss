@@ -1,0 +1,21 @@
+// Grid system
+
+.area {
+  @include xy-make-container($grid-gutter-width);
+  @include xy-make-container-width($grid-breakpoint-sm, $grid-area-sm);
+  @include xy-make-container-width($grid-breakpoint-md, $grid-area-md);
+  @include xy-make-container-width($grid-breakpoint-lg, $grid-area-lg);
+
+  .row {
+    @include xy-make-row($grid-gutter-width);
+  }
+}
+
+.col {
+  @include xy-make-column($grid-gutter-width);
+  @include xy-make-columns-width(xs, $grid-columns-count);
+
+  // @media (min-width: $grid-breakpoint-sm) {
+  //   @Include xy-make-columns-width(sm, 12);
+  // }
+}
