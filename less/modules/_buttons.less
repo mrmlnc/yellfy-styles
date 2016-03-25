@@ -1,0 +1,57 @@
+// Buttons
+
+.btn {
+  display: inline-block;
+  padding: @btn-padding-y @btn-padding-x;
+  font-size: @btn-font-size;
+  line-height: @line-height;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: @global-radius;
+  transition: all .25s ease-in-out;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+
+  // Disabled button
+  &.disabled,
+  &:disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: .65;
+  }
+}
+
+// Default button
+.btn-default {
+  .btn-color(@btn-default-bg, @btn-default-color, @btn-default-border);
+}
+
+// Primary button
+.btn-primary {
+  .btn-color(@btn-primary-bg, @btn-primary-color, @btn-primary-border);
+}
+
+// Secondary button
+.btn-secondary {
+  .btn-color(@btn-secondary-bg, @btn-secondary-color, @btn-secondary-border);
+}
+
+// Transparent button
+.btn-transparent {
+  background-color: transparent;
+
+  &:focus,
+  &:hover {
+    color: lighten(@body-color, 30);
+    background-color: transparent;
+  }
+}
