@@ -9,12 +9,13 @@
 
 // Library
 @import "modules/_normalize";
+@import "modules/_scaffolding";
 
 // Package managers
 @import "bower_components/xy-flexbox/xy";
 
 // Modules
-@import "modules/!(_normalize)**";
+@import "modules/!(_normalize|_scaffolding)**";
 @import "components/**";
 @import "partials/**";
 @import "pages/**";
