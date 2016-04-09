@@ -21,7 +21,7 @@ $navbar-item-active-color:             $brand-primary;
       margin-right: -$navbar-item-padding;
       margin-left: -$navbar-item-padding;
       flex-direction: row;
-      text-align: center;
+      justify-content: flex-start;
     }
 
     & > a {
