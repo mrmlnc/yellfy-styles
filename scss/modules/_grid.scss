@@ -16,6 +16,6 @@
   @include xy-make-columns-width(xs, $grid-columns-count);
 
   // @media (min-width: $grid-breakpoint-sm) {
-  //   @Include xy-make-columns-width(sm, 12);
+  //   @Include xy-make-columns-width(sm, $grid-columns-count);
   // }
 }
