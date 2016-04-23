@@ -2,9 +2,24 @@
 
 .area {
   @include xy-make-container($grid-gutter-width);
-  @include xy-make-container-width($grid-breakpoint-sm, $grid-area-sm);
-  @include xy-make-container-width($grid-breakpoint-md, $grid-area-md);
-  @include xy-make-container-width($grid-breakpoint-lg, $grid-area-lg);
+
+  &.-sm {
+    @include xy-make-container-width($grid-breakpoint-sm, $grid-area-sm);
+  }
+
+  &.-md {
+    @include xy-make-container-width($grid-breakpoint-md, $grid-area-md);
+  }
+
+  &.-lg {
+    @include xy-make-container-width($grid-breakpoint-lg, $grid-area-lg);
+  }
+
+  &.-full {
+    @include xy-make-container-width($grid-breakpoint-sm, $grid-area-sm);
+    @include xy-make-container-width($grid-breakpoint-md, $grid-area-md);
+    @include xy-make-container-width($grid-breakpoint-lg, $grid-area-lg);
+  }
 
   .row {
     @include xy-make-row($grid-gutter-width);
