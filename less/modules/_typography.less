@@ -44,6 +44,7 @@ p {
   margin-top: 0;
   margin-bottom: @spacer;
 
+  // Variations
   &.-lead {
     font-size: @font-size-lead;
   }
@@ -66,7 +67,7 @@ blockquote {
   cite {
     color: @blockquote-small-color;
 
-    &:before {
+    &::before {
       content: "\2014 \00A0";
     }
   }
