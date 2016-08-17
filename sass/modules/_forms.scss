@@ -28,25 +28,25 @@
   &::placeholder {
     color: $form-input-placeholder-color;
   }
+}
 
-  // Alignment height for select
-  select:not([multiple])& {
-    height: $form-input-height;
-  }
+// Alignment height for select
+select:not([multiple]).form-control {
+  height: $form-input-height;
+}
 
-  // [iOS] The vertical alignment of the label for the field of type file
-  input[type="file"]& {
-    border: 0;
-    line-height: 1;
-  }
+// [iOS] The vertical alignment of the label for the field of type file
+input[type="file"].form-control {
+  border: 0;
+  line-height: 1;
+}
 
-  // [Firefox, IE10+] Remove indents at the edges and the border property
-  // for a field of type range
-  input[type="range"]& {
-    padding-right: 0;
-    padding-left: 0;
-    border: 0;
-  }
+// [Firefox, IE10+] Remove indents at the edges and the border property
+// for a field of type range
+input[type="range"].form-control {
+  padding-right: 0;
+  padding-left: 0;
+  border: 0;
 }
 
 // A unit of form - group (label + input + description)
