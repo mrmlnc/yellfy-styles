@@ -1,0 +1,20 @@
+{
+  "name": "yellfy-styles",
+  "version": "2.0.0",
+  "scripts": {
+    "test": "rimraf build & gulp lint & gulp compile"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-stylelint": "^3.1.0",
+    "gulp-stylus": "^2.5.0",
+    "less-plugin-glob": "^1.1.1",
+    "rimraf": "^2.5.4",
+    "stylelint-config-standard": "^12.0.0"
+  }
+}
