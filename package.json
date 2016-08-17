@@ -2,7 +2,8 @@
   "name": "yellfy-styles",
   "version": "2.0.0",
   "scripts": {
-    "test": "rimraf build & gulp lint & gulp compile"
+    "pretest": "bower i xy-flexbox & rimraf build",
+    "test": "gulp lint & gulp compile"
   },
   "devDependencies": {
     "gulp": "github:gulpjs/gulp#4.0",
