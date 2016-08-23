@@ -9,7 +9,6 @@ const sass = require('gulp-sass');
 const lessPluginGlob = require('less-plugin-glob');
 const sassGlob = require('gulp-sass-glob');
 
-const csso = require('gulp-csso');
 const stylelint = require('gulp-stylelint');
 
 const rename = require('gulp-rename');
@@ -19,7 +18,6 @@ gulp.task('compile-less', () =>
     .pipe(less({
       plugins: [lessPluginGlob]
     }))
-    .pipe(csso())
     .pipe(rename('less.css'))
     .pipe(gulp.dest('build'))
 );
@@ -27,7 +25,6 @@ gulp.task('compile-less', () =>
 gulp.task('compile-stylus', () =>
   gulp.src('stylus/styles.styl')
     .pipe(stylus())
-    .pipe(csso())
     .pipe(rename('stylus.css'))
     .pipe(gulp.dest('build'))
 );
@@ -36,7 +33,6 @@ gulp.task('compile-sass', () =>
   gulp.src('sass/styles.scss')
     .pipe(sassGlob())
     .pipe(sass())
-    .pipe(csso())
     .pipe(rename('sass.css'))
     .pipe(gulp.dest('build'))
 );
