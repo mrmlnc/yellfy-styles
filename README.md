@@ -1,5 +1,7 @@
 # yellfy-styles
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mrmlnc/yellfy-styles.svg)](https://greenkeeper.io/)
+
 > This repository contains CSS micro-framework, which is included in Yellfy.
 
 [![Build Status](https://travis-ci.org/mrmlnc/yellfy-styles.svg?branch=master)](https://travis-ci.org/mrmlnc/yellfy-styles)
